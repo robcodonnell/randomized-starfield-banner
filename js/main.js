@@ -1,9 +1,9 @@
-var $banner = $('.banner');
+var $body = $('.banner');
 var $star;
-var width = $banner.outerWidth();
-var height = $banner.outerHeight();
+var width = $body.outerWidth();
+var height = $body.outerHeight();
 
-for (i = 0, i < 75, i++) {
+for (i = 0; i < 75; i++) {
   $star = $('<div>');
   $star.addClass('star');
   $star.css({
@@ -12,6 +12,5 @@ for (i = 0, i < 75, i++) {
     opacity: Math.random(),
     transform: 'rotate(' + Math.random() * 360 + 'deg) scale(' + Math.random() + ')'
   });
-  $banner.append($star);
-
+  $body.append($star);
 }
